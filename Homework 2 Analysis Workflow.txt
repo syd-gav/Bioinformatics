@@ -1,0 +1,60 @@
+Downloading the file:  
+
+Went to https://ftp.ensembl.org/pub/current_gff3/ and selected the rattus_norvegicus/ file name. Then copied the file link named 'Rattus_norvegicus.mRatBN7.2.112.gff3.gz'.
+
+In my terminal used the following commands to download the file and unzip it.
+
+$ wget https://ftp.ensembl.org/pub/current_gff3/rattus_norvegicus/Rattus_norvegicus.mRatBN7.2.112.gff3.gz
+
+$ ls
+Rattus_norvegicus.mRatBN7.2.112.gff3.gz
+
+$ gunzip Rattus_norvegicus.mRatBN7.2.112.gff3.gz
+
+Analyzing the file:
+
+
+For Question 2 to determine how many features the file contains
+
+$ cat Rattus_norvegicus.mRatBN7.2.112.gff3 | wc -l
+
+
+For Question 3 to determine how many sequence regions the files contains
+
+$ cat Rattus_norvegicus.mRatBN7.2.112.gff3 | head
+
+$ cat Rattus_norvegicus.mRatBN7.2.112.gff3 | grep sequence-region | wc -l
+
+
+To get make a new file that does not include comments
+
+$ cat Rattus_norvegicus.mRatBN7.2.112.gff3 | grep sequence-region | head
+
+$ cat Rattus_norvegicus.mRatBN7.2.112.gff3 | grep -v sequence-region | head
+
+$ cat Rattus_norvegicus.mRatBN7.2.112.gff3 | grep -v '#' | head
+
+$ cat Rattus_norvegicus.mRatBN7.2.112.gff3 | grep -v '#' > norvegicus.gff3
+
+$ ls -lh
+
+
+For Question 4 to determine how many genes are listed for Rattus norvegicus
+
+$ cat norvegicus.gff3 | cut -f 1 | head
+
+$ cat norvegicus.gff3 | cut -f 1,2 | head
+
+$ cat norvegicus.gff3 | cut -f 3 | head
+
+$ cat norvegicus.gff3 | cut -f 3 | sort | uniq | head
+
+$ cat norvegicus.gff3 | cut -f 3 | sort | uniq -c | head
+
+
+For Question 5 to determine the top 10 most annotated feature types
+
+$ cat norvegicus.gff3 | cut -f 3 | sort | uniq -c | sort -rn
+
+$ cat norvegicus.gff3 | cut -f 3 | sort | uniq -c | sort -rn | head
+
