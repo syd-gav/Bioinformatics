@@ -21,7 +21,7 @@ datasets download genome accession ${GCF} --include gff3,cds,protein,rna,genome
 unzip ${ZIP}
 
 # Look at the first 10 lines that do not have # to ensure proper download
-cat ${gff} | grep '#' | head
+cat ${gff} | grep -v '#' | head
 
 # Put all of the lines that are annotated as a 'gene' into it's own gff file
 cat ${gff} | awk ' $3=="gene" {print $0}' > ${new}
