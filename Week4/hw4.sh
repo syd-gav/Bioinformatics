@@ -25,3 +25,6 @@ cat ${gff} | grep '#' | head
 
 # Put all of the lines that are annotated as a 'gene' into it's own gff file
 cat ${gff} | awk ' $3=="gene" {print $0}' > ${new}
+
+# To print the number of genes from the produced gene file
+cat ${new} | wc -l
