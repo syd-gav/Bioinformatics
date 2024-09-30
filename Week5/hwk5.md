@@ -37,3 +37,20 @@ The FASTQ files are each 15 megabytes
 __Compress the files and report how much space that saves.__
 
 When the files become compressed they are now 2.7 megabytes saving 12.3 megabytes of space. 
+
+## How much data would be generated when covering the Yeast, the Drosophila or the Human genome at 30x?
+
+### Ratio for required reads:file size = 1.25 million base pairs:megabytes
+### Compressed files from above are 18% that of full files
+
+__The Yeast genome__
+
+Since the approximate size for Saccharomyces cerevisiae is 12 million base pairs coverage at 30x would require 360 million reads so ~ 450 megabytes before compression then 81 megabytes after compression. 
+
+__The Drosophila genome__
+
+Since the approximate size for Drosophila melanogaster is 144 million base pairs coverage at 30x would require 4.32 trillion reads so ~ 5400 megabytes before compression then 972 megabytes after compression.
+
+__The Human genome__
+
+Since the approximate size for Homo sapiens is 3 Gb coverage at 30x would require 93 trillion reads so ~ 116 gigabytes before compression then 21 gigabytes after compression.
