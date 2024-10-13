@@ -11,7 +11,7 @@ Usage:
 	# Run if there are both _1 and _2 fastq files
 	@echo "make Clean"
 	# Run if there is only _1 fastq files
-	@echo "make clean"
+	@echo "make Trim"
 	@echo "make Rerun"
 
 # Set the variables as desired
@@ -111,7 +111,7 @@ Clean:
 	fastp --cut_tail -i ${READS}/${SRR}_1.fastq -o ${SRR}_1.trimmed.fastq -I ${READS}/${SRR}_2.fastq -O ${SRR}_2.trimmed.fastq
 
 # Run if there is only _1 fastq files
-clean:
+Trim:
 	# Trim the end of the per base sequence quality graph at the tail end
 	fastp --cut_tail -i ${READS}/${SRR}_1.fastq -o ${SRR}_1.trimmed.fastq
 
