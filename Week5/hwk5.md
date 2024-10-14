@@ -40,17 +40,19 @@ When the files become compressed they are now 2.7 megabytes saving 12.3 megabyte
 
 ## How much data would be generated when covering the Yeast, the Drosophila or the Human genome at 30x?
 
-### Ratio for required reads:file size = 1.25 million base pairs:megabytes
+### Required Reads = (Genome Size * Coverage 30)/Average Length 100
+### From my simulation above 4000reads/megabyte
 ### Compressed files from above are 18% that of full files
 
 __The Yeast genome__
 
-Since the approximate size for Saccharomyces cerevisiae is 12 million base pairs coverage at 30x would require 360 million reads so ~ 450 megabytes before compression then 81 megabytes after compression. 
+Since the approximate size for Saccharomyces cerevisiae is 12 million base pairs coverage at 30x would require 3.6 million reads. The full file would be about 900 megabytes and compressed would be 162 megabytes
+
 
 __The Drosophila genome__
 
-Since the approximate size for Drosophila melanogaster is 144 million base pairs coverage at 30x would require 4.32 trillion reads so ~ 5400 megabytes before compression then 972 megabytes after compression.
+Since the approximate size for Drosophila melanogaster is 144 million base pairs coverage at 30x would require 43.2 million base pairs, the full file would be 10.8 gigabytes and compressed would be 1.9 gigabytes.
 
 __The Human genome__
 
-Since the approximate size for Homo sapiens is 3 Gb coverage at 30x would require 93 trillion reads so ~ 116 gigabytes before compression then 21 gigabytes after compression.
+Since the approximate size for Homo sapiens is 3 Gb coverage at 30x would require 900 million reads so ~ 225 gigabytes before compression then 40.5 gigabytes after compression.
