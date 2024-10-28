@@ -1,32 +1,32 @@
-Homepage for Applied Bioinformatics Course Homework Submissions
+## Homepage for Applied Bioinformatics Course Homework Submissions
 
-## Week 2
+#### Week 2
 Demonstrate data analysis at UNIX command line
 
-## Week 3
+#### Week 3
 
 Download, Generate and Visualize GFF files in IGV
 
-## Week 4
+#### Week 4
 
 Scripting and Sequence Ontologies
 
-## Week 5
+#### Week 5
 
 Simulating FASTQ files
 
-## Week 6
+#### Week 6
 
 FASTQ Quality Control
 
-## Week 7
+#### Week 7
 
 Write a Makefile
 
-## Week 8
+#### Week 8
 
 Generate a BAM alignment file
 
-## Week 9
+#### Week 9
 
 Filter a BAM file
