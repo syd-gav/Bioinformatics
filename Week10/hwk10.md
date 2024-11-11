@@ -88,7 +88,7 @@ make -f src/run/bcftools.mk REF=${DIR}/${NAME}.fasta BAM=${BAM2}/${SRR}.sorted.b
 
 The image below is a screenshot of the IGV screen encompassing approximately 8.6kb of the genome. Deeper analysis of the individual variants is given in the section below
 
-![Variants Called in an 8.6kb Window IGV visualization](visualization_8.6kb_overview.png)
+![Variants Called in an 8.6kb Window IGV visualization](vcf_visualization_8.6kb_overview.png)
 
 ### Analysis of the Variants called in IGV
 
