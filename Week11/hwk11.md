@@ -21,8 +21,8 @@ Overall, there were 613 variants processed throughout the genome data, of which 
 
 The three most common types of consequence type were missense variants, and downstream and upstream gene variants. 
 
-![Variant consequences pie chart](consequences_pie_chart)
+![Variant consequences pie chart](consequences_pie_chart.png)
 
 Finally, the chromosome of *P. falciparum* NF54 that had the most variants called in this sample was QFXU01000012.1 with 97 variants along approximately 3,300 kb. And the chromosome with the least variants of 6 was QFXU01000018.1 along 306 kb. 
 
-![Number of variants in each chromosome](varaints_by_chromosome)
+![Number of variants in each chromosome](varaints_by_chromosome.png)
