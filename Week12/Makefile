@@ -147,4 +147,4 @@ vcf:
 	bio code 
 
 	# Run the variant calling on the BAM file
-	make -f ../src/run/bcftools.mk REF=${SRR}/${DIR}/${NAME}.fasta BAM=${SRR}/${BAM2}/${SRR}.sorted.bam VCF=${SRR}/${VCF} run
+	make -f src/run/bcftools.mk REF=${SRR}/${DIR}/${NAME}.fasta BAM=${SRR}/${BAM2}/${SRR}.sorted.bam VCF=${SRR}/${VCF} run
