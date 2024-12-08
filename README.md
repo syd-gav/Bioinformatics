@@ -30,3 +30,19 @@ Generate a BAM alignment file
 #### Week 9
 
 Filter a BAM file
+
+#### Week 10
+
+Generate a variant call file
+
+#### Week 11
+
+Establish the effects of variants
+
+#### Week 12
+
+Automate a VCF calling pipeline
+
+#### Week 13
+
+Generate an RNA-Seq count matrix
